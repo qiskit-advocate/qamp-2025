@@ -4,6 +4,29 @@ This is the official repository for the QAMP 2025 cohort (October 2025 - January
 
 _The administrators of this repo are Radha Pyari Sandhir (quantum-kittens) and Astri Cornish (Astri-Cornish)._
 
+---
+
+## Project: Quantum for Everyone – From Intuition to Notation
+
+This project aims to design an inclusive, tiered curriculum introducing quantum computing concepts using Qiskit, suitable for learners as young as grade 6 and scalable up to university students and professionals. The curriculum features hands-on labs, assessments, and multilingual support (including Roman Urdu).
+
+### Project Structure
+- `curriculum/` – Curriculum outlines and tiered content
+- `labs/` – Interactive Jupyter notebooks (English & translations)
+- `assessments/` – Quizzes, coding tasks, and mini-projects
+- `translations/` – Templates and translated content
+- `docs/` – Documentation and teaching guides
+- `blog/` – Project journey and outreach posts
+
+### Contribution Guidelines
+1. Please read the curriculum vision and roadmap before contributing.
+2. Use the translation template for new language versions.
+3. For labs and assessments, follow the provided structure and pedagogical notes.
+4. Open issues for suggestions or improvements.
+5. All contributors must adhere to the Qiskit Code of Conduct.
+
+---
+
 ## What is QAMP?
 
 Qiskit Advocate Mentorship Program (QAMP) is a program focused on bring new contributors into Qiskit open source software development where Qiskit advocates work on a 3-month projects under the guidance of mentors. It is an initiative designed to support growth and collaboration within our vibrant community. 
