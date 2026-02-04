@@ -1,39 +1,73 @@
-Minimal Viable Products 
+# 📝 Assessments: Evaluation and Measurement
 
-📝 assessments Folder: Evaluation and Measurement 
+**Location:** `assessments/`  
+**Available at forked repository:** [`learningdungeon/qamp-2025/assessments/`](https://github.com/learningdungeon/qamp-2025/tree/main/assessments)
 
-AVAILABLE AT FORKED REPO Assessment folder  [learningdungeon/qamp](https://github.com/learningdungeon/qamp-2025)
+This directory contains materials for evaluating student and developer understanding across all four curriculum tiers. Assessments range from quick conceptual quizzes to comprehensive coding tasks and capstone projects.
 
-This directory is dedicated to all materials used to evaluate student and developer understanding across the four curriculum tiers. The materials range from quick quizzes to in-depth coding tasks and capstone mini-projects.
+## 📁 Folder Structure
 
-📁 Folder Structure: The assessment materials are categorized by format:
+Assessments are organized by format to support different learning evaluation methods:
 
-quizzes:
+### `quizzes/`
+Short-form assessments including:
+- Multiple-choice questions
+- True/false statements
+- Conceptual understanding checks
+- **Primary Tiers:** 1 & 2 (foundational concepts)
+- **Example:** Superposition principles, entanglement basics
 
-Short-form assessments, including multiple-choice, true/false, and conceptual questions. Crucial for Tier 1 & 2 to test foundational understanding (e.g., conceptual questions on Superposition).
+### `coding_tasks/`
+Focused programming exercises testing specific quantum computing skills:
+- Small-scale Qiskit implementations
+- Algorithm building blocks
+- Circuit construction challenges
+- **Primary Tiers:** 2, 3 & 4 (developing to advanced)
+- **Example:** Implementing X, Y, Z rotations with Qiskit
 
-coding_tasks:
+### `mini_projects/`
+Multi-step assignments integrating concepts across multiple weeks:
+- Comprehensive quantum protocols
+- Real-world quantum applications
+- End-to-end simulations
+- **All Tiers** (with tier-appropriate complexity)
+- **Examples:** 
+  - Quantum Teleportation implementation (Week 4)
+  - BB84 quantum key distribution simulation (Week 8)
 
-Focused, small-scale programming exercises designed to test specific skills. Predominantly for Tier 2, 3, & 4 (e.g., implementing a simple X, Y, or Z rotation using Qiskit).
+### `worksheets/`
+Guided activities and structured practice problems:
+- Non-coding reinforcement exercises
+- Visual and analogical learning tools
+- Step-by-step conceptual development
+- **Primary Tiers:** 1 & 2 (beginner to intermediate)
+- **Example:** Analogy-based superposition worksheets
 
-mini_projects:
+## 🎯 Contribution Guidelines
 
-Larger, multi-step assignments that combine concepts from several weeks. Examples include the Teleportation project (Week 4) or building a basic BB84 simulation (Week 8).
+### Tier Alignment
+All assessment materials must be clearly labeled and tailored to their target tier:
 
-worksheets:
+| Tier | Assessment Focus | Example Content |
+|------|-----------------|-----------------|
+| **Tier 1** | Analogies, visual concepts, basic principles | "Quantum coin flip" analogies for superposition |
+| **Tier 2** | Mathematical foundations, basic circuits | Bloch sphere visualizations, simple gate sequences |
+| **Tier 3** | Qiskit implementation, algorithm building | Quantum Fourier transform, basic VQE circuits |
+| **Tier 4** | Advanced algorithms, formal derivations | QAOA optimization, error correction protocols |
 
-Guided activities and structured practice problems (non-coding). Primarily for Tier 1 & 2 to reinforce concepts using analogies or visual exercises.
+### Topic Coverage
+Ensure comprehensive coverage of all weekly topics as outlined in:
+- **`docs/technical/tiers-focus-checklist.md`**
+- Curriculum weekly breakdowns
+- Learning objective mappings
 
-🎯 Contribution Guidelines and Tier Alignment:
+### Coding Standards
+All programming assessments must follow these guidelines:
 
-Tier Specificity:
+1. **Qiskit Compatibility:** Use latest Qiskit syntax and features
+2. **Code Quality:** Include proper comments, docstrings, and error handling
+3. **Testing:** Provide test cases or expected outputs where applicable
+4. **Dependencies:** List required packages in notebook headers
+5. **Documentation:** Include setup instructions and learning objectives
 
-Assessment materials must be clearly labeled and tailored to the specific conceptual depth required by the target tier. A Tier 1 quiz should focus on analogies, while a Tier 4 task might require a Formal Derivation or a complex Qiskit Estimator application.
-
-Topic Coverage:
-
-Ensure comprehensive coverage of all weekly topics outlined in the Tiers Focus - Tiers Based Check List (located in docs/technical/).
-
-Coding Standards:
-
-All coding tasks and mini-projects should utilize Qiskit and follow the latest syntax, aligning with the focus on the Qiskit Developer (Tier 3) and Advocate (Tier 4) tracks.
+### File Naming Convention
