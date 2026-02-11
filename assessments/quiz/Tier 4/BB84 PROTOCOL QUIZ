@@ -1,0 +1,88 @@
+## 🚀 BB84 Quantum Cryptography Protocol Worksheet
+
+**Objective:** Understand the world's first quantum cryptography protocol through interactive questions and exercises.
+
+---
+
+## 📚 Part A: Understanding Quantum Bases
+
+### Questions:
+1. **Z basis measurements give us** ______
+   *Hint: Think about the standard computational basis*
+
+2. **X basis measurements give us** ______  
+   *Hint: This involves the Hadamard gate*
+
+3. **Why can't we measure both Z and X bases simultaneously?**
+   *Hint: This is a fundamental quantum principle*
+
+---
+
+## 🔄 Part B: Protocol Steps Sequencing
+
+**Instructions:** Number the steps in the correct chronological order (1-4):
+
+- [ ] Alice and Bob publicly compare which bases they used
+- [ ] Alice encodes random bits using randomly chosen bases (Z or X)
+- [ ] Bob measures received qubits using randomly chosen bases (Z or X)
+- [ ] They keep only the bits where their bases matched
+
+**Correct Sequence:** ______ → ______ → ______ → ______
+
+---
+
+## 🛡️ Part C: Security Analysis
+
+### Security Questions:
+
+1. **If Eve (eavesdropper) measures in the wrong basis, what happens?**
+   - A) She gets the correct bit with 100% accuracy
+   - B) She gets random results (50% 0, 50% 1)
+   - C) The qubit is destroyed
+   - D) Nothing happens
+
+2. **How do Alice and Bob detect Eve's presence?**
+   - A) By checking if their keys are identical
+   - B) By publicly comparing a subset of bits
+   - C) By measuring entanglement
+   - D) They can't detect Eve
+
+3. **What's the approximate maximum safe error rate for BB84?**
+   - A) 5%
+   - B) 11%
+   - C) 25%
+   - D) 50%
+
+---
+
+## 💻 Part D: Code Implementation
+
+**Task:** Complete the quantum encoding function for BB84:
+
+```python
+def encode_qubit(bit, basis):
+    """
+    Encode a classical bit into a quantum state for BB84 protocol
+    
+    Parameters:
+    bit (int): 0 or 1
+    basis (str): 'Z' or 'X'
+    
+    Returns:
+    QuantumCircuit: Circuit encoding the bit
+    """
+    qc = QuantumCircuit(1, 1)
+    
+    if basis == 'Z':
+        # Z basis: |0⟩ for 0, |1⟩ for 1
+        if bit == 1:
+            qc.______(0)  # Apply which gate to make |1⟩?
+    else:  # X basis
+        # X basis: |+⟩ for 0, |-⟩ for 1
+        if bit == 0:
+            qc.______(0)  # Apply which gate to make |+⟩?
+        else:
+            qc.______(0)  # First make |1⟩
+            qc.______(0)  # Then transform to |-⟩
+    
+    return qc
